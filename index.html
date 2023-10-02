@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google" value="notranslate">
   <link rel="shortcut icon" href="static/favicon.ico">
-  <title>Scratch 3.0 GUI</title>
+  <title>Locker-Cube</title>
   
   <script>
     window.scratchConfig = {
@@ -20,32 +20,6 @@
       }, 
       menuBar: {
         color: 'hsla(215, 100%, 65%, 1)'
-      }, 
-      shareButton: {
-        show: true,
-        buttonName: "分享",
-        handleClick: () => {
-          //点击分享按钮
-          console.log('分享按钮')
-          window.scratch.getProjectCover(cover => {
-            //TODO 获取到作品截图
-            console.log(cover)
-          })
-          window.scratch.getProjectFile(file => {
-            //TODO 获取到项目文件
-            console.log(file)
-          })
-          // 获取到项目名
-          var projectName = window.scratch.getProjectName()
-          console.log(projectName);
-        }
-      }, 
-      profileButton: {
-        show: true,
-        buttonName: "我的作品",
-        handleClick:()=>{
-          //点击profile按钮
-        }
       }, 
       stageArea:{
         showControl: false, //是否显示舞台区控制按钮
