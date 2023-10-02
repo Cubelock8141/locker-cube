@@ -21,32 +21,6 @@
       menuBar: {
         color: 'hsla(44, 100%, 40%, 1)'
       }, 
-      shareButton: {
-        show: true,
-        buttonName: "共有",
-        handleClick: () => {
-          //点击分享按钮
-          console.log('分享按钮')
-          window.scratch.getProjectCover(cover => {
-            //TODO 获取到作品截图
-            console.log(cover)
-          })
-          window.scratch.getProjectFile(file => {
-            //TODO 获取到项目文件
-            console.log(file)
-          })
-          // 获取到项目名
-          var projectName = window.scratch.getProjectName()
-          console.log(projectName);
-        }
-      }, 
-      profileButton: {
-        show: true,
-        buttonName: "プロフィール",
-        handleClick:()=>{
-          //点击profile按钮
-        }
-      }, 
       stageArea:{
         showControl: false, //是否显示舞台区控制按钮
         showLoading: false, //是否显示Loading
